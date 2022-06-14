@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+}
+.header {
+  background-color: #128c7e;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.logo {
+  font-family: "Lobster", cursive;
+  padding: 10px 0px;
+  font-size: 40px;
+  color: #fff;
+}
+.nav__list {
+  list-style: none;
+}
+.nav__item {
+  margin: 5px 0;
+}
+.nav__link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.main__title {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+.main__paragraph {
+  padding: 0 15px;
+  text-align: justify;
+  color: black;
+  font-weight: 400;
+}
+.gallery__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.gallery__title{
+    margin-top: 40px;
+    text-align: center;
+}
+.gallery__img:hover{
+    filter: opacity(.85);
+}
+.contact__title {
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 10px 15px 10px;
+}
+.gallery__subtitle {
+  text-align: center;
+  font-weight: bolder;
+  padding: 10px 0;
+  font-size: 20px;
+}
+.gallery__item {
+  margin: 0 10px;
+}
+.contact {
+  text-align: center;
+}
+.contact__whatsapp {
+  width: 200px;
+  margin-bottom: 30px;
+}
+.footer {
+  background-color: black;
+  padding: 20px 30px;
+}
+.footer__text {
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+}
+/*Tablets and desktop*/
+@media (min-width: 600px) {
+  .nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__item {
+    margin: 0 10px;
+  }
+  .main__paragraph {
+    width: 80%;
+    margin: auto;
+  }
+}

@@ -1,0 +1,98 @@
+<!-- Pagina web aplicando conceptos de mobile first y metodología BEM. 
+
+Realizada para practicar los conceptos aprendidos hasta ese momento. 
+César Mongez
+
+Vamos a crear un sitio web para “dogShop”, donde permita mostrar la información de la empresa,
+se le solicitará:
+● Construir estructura HTML utilizando etiquetas semánticas, mínimo 3, como header,
+section, footer, nav o article.
+● Crear un archivo Css.
+● Agregar imágenes al proyecto.
+● Realizar el proyecto bajo la metodología BEM.
+● La página debe tener títulos y subtítulos para las secciones.
+● Se deben usar 1 o 2 tipos diferentes de fuentes.(Google fonts).
+● La página debe tener una barra de navegación.
+● Añade un footer con “Todos los derechos reservados” centrado color de fondo negro ,
+letras color blanco. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>DogShop</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <p class="logo">DogShop</p>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#pets" class="nav__link">Mascotas</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 class="main__title">DogShop</h1>
+        <p class="main__paragraph">
+            Somos DogShop y estamos estrenando nuestra nueva pagina web que esta realizada bajo el concepto de Mobile
+            First y la metodologia BEM.
+            <br>
+            Tratamos de que nuestra pagina web sea escalable y legible para futuros cambios.
+        </p>
+        <section class="gallery">
+            <h2 class="gallery__title">Nuestros Mascotas</h2>
+            <div class="gallery__container">
+                <div class="gallery__item">
+                    <h3 class="gallery__subtitle" id="pets">Perros</h3>
+                    <img src="img/perro-icon.png" alt="" class="gallery__img">
+                </div>
+                <div class="gallery__item">
+                    <h3 class="gallery__subtitle">Gatos</h3>
+                    <img src="img/gato-icon.png" alt="" class="gallery__img">
+                </div>
+                <div class="gallery__item">
+                    <h3 class="gallery__subtitle gallery__subtitle--green">Conejos</h3>
+                    <img src="img/conejo-icon.png" alt="" class="gallery__img">
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h2 class="contact__title">
+                Contactanos a nuestro Whatsapp
+            </h2>
+            <a href="#" class="contact__link"><img src="img/whatsapp-logo.png" alt="" class="contact__whatsapp"></a>
+        </section>
+
+    </main>
+    <footer class="footer">
+        
+        <p class="footer__text">Creado por César Mongez</p>
+        
+        <p class="footer__text">© Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
